@@ -16,9 +16,20 @@ public class Order {
     private Double totalBill;
     @Column(name = "status")
     private Boolean status;
-
     @Column(name = "delivery_date")
     private Date deliveryDate;
+
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "agent_id")
+    private Agent agent;
+
+    public Agent getAgent() {
+        return agent;
+    }
+
+    public void setAgent(Agent agent) {
+        this.agent = agent;
+    }
 
     public Date getDeliveryDate() {
         return deliveryDate;

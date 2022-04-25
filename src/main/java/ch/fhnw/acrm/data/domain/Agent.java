@@ -35,6 +35,7 @@ public class Agent {
 	@Transient // will not be stored in DB
 	private String remember;
 
+
 	public Integer getZipCode() {
 		return zipCode;
 	}
