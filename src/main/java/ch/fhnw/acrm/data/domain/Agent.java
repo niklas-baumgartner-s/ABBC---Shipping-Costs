@@ -21,6 +21,10 @@ public class Agent {
 	private Long id;
 	@NotEmpty(message = "Please provide a name.")
 	private String name;
+	@Column(name = "address")
+	private String address;
+	@Column(name = "zip_code")
+	private Integer zipCode;
 	@Email(message = "Please provide a valid e-mail.")
 	@NotEmpty(message = "Please provide an e-mail.")
 	private String email;
@@ -30,9 +34,22 @@ public class Agent {
 	private String role = "USER";
 	@Transient // will not be stored in DB
 	private String remember;
-	@OneToMany(mappedBy = "agent")
-	@JsonIgnore
-	private List<Customer> customers;
+
+	public Integer getZipCode() {
+		return zipCode;
+	}
+
+	public void setZipCode(Integer zipCode) {
+		this.zipCode = zipCode;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAdress(String adress) {
+		this.address = adress;
+	}
 
 	public Long getId() {
 		return id;
@@ -66,14 +83,6 @@ public class Agent {
 
 	public void setPassword(String password) {
 		this.password = password;
-	}
-
-	public List<Customer> getCustomers() {
-		return customers;
-	}
-
-	public void setCustomers(List<Customer> customers) {
-		this.customers = customers;
 	}
 
 	public String getRemember() {
