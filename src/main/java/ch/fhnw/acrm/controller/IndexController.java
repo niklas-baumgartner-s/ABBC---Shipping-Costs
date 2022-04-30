@@ -28,4 +28,9 @@ public class IndexController {
         return "webpages/product-page.html";
     }
 
+    @GetMapping("/cart-page")
+    public String getShoppingCartsView() {
+        return "webpages/cart-page.html";
+    }
+
 }
