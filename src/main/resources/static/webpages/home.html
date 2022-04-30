@@ -62,6 +62,7 @@
                         <h4><strong>Product</strong><br></h4>
                     </div>
                 </div>
+                <div class="intro-heading text-uppercase"></div><a class="btn btn-primary btn-xl text-uppercase" style="background: rgba(172,250,255,0.5);" id="product-page">Online-Shop</a>
             </div>
         </div>
     </section>
@@ -372,6 +373,22 @@
     </div>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/agency.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#home").click(function (){
+                window.location.replace("/home");
+            });
+
+            $("#product-page").click(function (){
+                window.location.replace("/product-page");
+            });
+
+        });
+    </script>
+
+
 </body>
 
 </html>

@@ -23,4 +23,9 @@ public class IndexController {
         return "webpages/home.html";
     }
 
+    @GetMapping("/product-page")
+    public String getProductsView() {
+        return "webpages/product-page.html";
+    }
+
 }
