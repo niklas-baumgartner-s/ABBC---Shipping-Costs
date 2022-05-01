@@ -26,7 +26,8 @@
                     <li class="nav-item"><a class="nav-link" href="#about" style="color: rgb(64,81,94);font-weight: bold;text-shadow: 0px 0px rgb(0,0,0);">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#team" style="text-shadow: 0px 0px rgb(0,0,0);font-weight: bold;color: rgb(64,81,94);">Team</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact" style="font-weight: bold;text-shadow: 0px 0px rgb(0,0,0);color: rgb(64,81,94);">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" id="cart-page"><i class="fa fa-shopping-cart" style="font-size:18px;color:black"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="account-page" style="font-weight: bold;text-shadow: 0px 0px rgb(0,0,0);color: rgb(64,81,94);">Account</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart-page"><i class="fa fa-shopping-cart" style="font-size:18px;color:black"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -388,6 +389,10 @@
 
             $("#cart-page").click(function (){
                 window.location.replace("/cart-page");
+            });
+
+            $("#account-page").click(function (){
+                window.location.replace("/account-page");
             });
 
         });
