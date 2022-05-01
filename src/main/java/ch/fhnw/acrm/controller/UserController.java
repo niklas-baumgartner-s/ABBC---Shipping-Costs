@@ -20,9 +20,9 @@ public class UserController {
     @Autowired
     private AgentService agentService;
 
-    @GetMapping("/login")
+    @GetMapping("/login-page")
     public String getLoginView() {
-        return "user/login.html";
+        return "user/login-page.html";
     }
 
     @GetMapping("/user/register")
