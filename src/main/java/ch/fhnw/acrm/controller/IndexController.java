@@ -33,6 +33,11 @@ public class IndexController {
         return "webpages/cart-page.html";
     }
 
+    @GetMapping("/service-page")
+    public String getServicePageView() {
+        return "webpages/service-page.html";
+    }
+
     @GetMapping("/account-page")
     public String getAccountPageView() {
         return "webpages/account-page.html";
